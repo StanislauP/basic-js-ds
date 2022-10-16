@@ -30,19 +30,20 @@ class BinarySearchTree {
     // remove line with error and write your code here
     function addWithin(node, data){
       if(!node){
-        return new Node(value)
+        return new Node(data)
       }
 
-      if (node.value === value){
+      if (node.value === data){
         return node
       }
-      if (value<node.value){
-        node.left = addWithin(node.left, value)
+      if (data<node.value){
+        node.left = addWithin(node.left, data)
       }else{
-        node.right = addWithin(node.right, value)
+        node.right = addWithin(node.right, data)
       }
       return node
     }
+    this.root = addWithin(this.root, data)
   }
 
   has(/* data */) {

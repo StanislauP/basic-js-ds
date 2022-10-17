@@ -19,13 +19,11 @@ const { NotImplementedError } = require('../extensions/index.js');
   }
   
 getUnderlyingList() {
-   
-    for(let i=0; i<this.array.length; i++){
-        if (this.array[i]!=null){
-        queue['value']=this.array[i]
-        queue['next']={getUnderlyingList(queue)}}
-}
-    return queue
+    let value = this.array[0]
+
+    let next = this.array[1]
+    console.log({value, next})
+    return {value, next}
   }
 
   enqueue(value) {

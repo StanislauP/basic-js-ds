@@ -18,7 +18,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     this.array = []
   }
   
-getUnderlyingList(queue = {}) {
+getUnderlyingList() {
    
     for(let i=0; i<this.array.length; i++){
         if (this.array[i]!=null){

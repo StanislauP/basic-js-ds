@@ -25,8 +25,6 @@ getUnderlyingList(queue = {}) {
         queue['value']=this.array[i]
         queue['next']={getUnderlyingList(queue)}}
 }
-  
-    console.log({value, next})
     return queue
   }
 

@@ -18,6 +18,7 @@ class BinarySearchTree {
     // remove line with error and write your code here
     //return this.tree.keys()
     this.root = null
+    return this.root
   }
 
   add(/* data */) {
